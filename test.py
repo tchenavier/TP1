@@ -4,13 +4,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-df = pd.read_csv("Donner.csv")
+
+df = pd.read_csv("donner.csv")
+
 print ("moddule importer avec succes")
-# Mini test : graphique seaborn 
-data = df({ 
-    "vitesse": np.random.normal(80, 15, 100), 
-    "danger": np.random.choice(["Safe", "danger"], 100) 
-}) 
-sns.boxplot(x="danger", y="vitesse", data=data) 
+# Mini test : graphique seaborn
+
+
+
+sns.boxplot(x="Danger", y="vitesse", data=df) 
 plt.title("Exemple graphique : vitesse selon danger") 
 plt.show() 
